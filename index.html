@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="head">
+        <h2>Employee Payroll....</h2>
+    </div>
+    <div class="holder">
+        <div class="imgcontainer">
+            <img src="img.jpg" alt="Avatar" class="avatar">
+        </div>
+        <div class="container mainbody">
+            <label for="uname"><b>User ID</b></label>
+            <input type="text" id="UID" placeholder="Enter Username" name="uname" required>
+            <br>
+            <div class="select-style">
+                <label>Designation : </label>
+                <select id="desig" style="height:35px;width:150px">
+                    <option value="Ceo">CEO</option>
+                    <option value="Manager">Manger</option>
+                    <option value="SeniorDeveloper">Senior Developer</option>
+                    <option value="JuniorDeveloper">Junior Developer</option>
+                </select>
+            </div>
+            <br>
+            <label for="psw"><b>Days Attended</b></label>
+            <input type="text" id="days" placeholder="No of days attended" name="days" required>
+            <button onclick="validate()">Submit</button>
+        </div>
+    </div>
+    <div class="footer">
+        <h2 id="result"></h2>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
